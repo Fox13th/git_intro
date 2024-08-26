@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1" version="24.7.7">
+  <diagram name="Страница — 1" id="yDXhxSO_VKkCCqHJe2A8">
+    <mxGraphModel dx="192" dy="692" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cNEEXxES4iZ6Ibb-hSEK-1" value="Рекомендательный движок&lt;div&gt;(CF Model-based)&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="56" y="-33" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cNEEXxES4iZ6Ibb-hSEK-2" value="Планировщик (Scheduler)&lt;div&gt;Раз в день&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="56" y="-123" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cNEEXxES4iZ6Ibb-hSEK-3" value="UGC Service&lt;div&gt;MongoDB&lt;br&gt;&lt;div&gt;(Данные о лайкай, комменты и т.д.&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="207" y="-33" width="177" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cNEEXxES4iZ6Ibb-hSEK-6" value="NoSQL&lt;div&gt;Redis&lt;/div&gt;&lt;div&gt;Временное хранилище рекомендаций&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="28" y="85.07" width="165" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="cNEEXxES4iZ6Ibb-hSEK-7" value="FasApi&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; line-height: normal; font-family: &amp;quot;.SF UI&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;.SFUI-Regular&amp;quot;;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;.SFUI-Regular&amp;quot;; text-decoration: underline;&quot;&gt;/recommendations/{user_id}&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;.SFUI-Regular&amp;quot;;&quot;&gt;: Возвращает рекомендации для конкретного пользователя.&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;p style=&quot;margin: 0px; font-style: normal; font-variant-caps: normal; font-stretch: normal; line-height: normal; font-family: &amp;quot;.SF UI&amp;quot;; font-size-adjust: none; font-kerning: auto; font-variant-alternates: normal; font-variant-ligatures: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-position: normal; font-feature-settings: normal; font-optical-sizing: auto; font-variation-settings: normal;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;.SFUI-Regular&amp;quot;;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;.SFUI-Regular&amp;quot;; text-decoration: underline;&quot;&gt;/similar/{movie_id}&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;.SFUI-Regular&amp;quot;;&quot;&gt;: Возвращает похожие фильмы на основе какого-либо заданного фильма.&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="22" y="228" width="370" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="BjNXo_p2kXInQrtyGgDp-1" value="Пользователь&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="147" y="455" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BjNXo_p2kXInQrtyGgDp-2" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.439;entryY=0.994;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BjNXo_p2kXInQrtyGgDp-1" target="cNEEXxES4iZ6Ibb-hSEK-7">
+          <mxGeometry width="120" relative="1" as="geometry">
+            <mxPoint x="220" y="202" as="sourcePoint" />
+            <mxPoint x="340" y="202" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BjNXo_p2kXInQrtyGgDp-3" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.125;exitY=0.006;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="cNEEXxES4iZ6Ibb-hSEK-7" target="cNEEXxES4iZ6Ibb-hSEK-6">
+          <mxGeometry width="120" relative="1" as="geometry">
+            <mxPoint x="69" y="219" as="sourcePoint" />
+            <mxPoint x="319" y="341.07" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BjNXo_p2kXInQrtyGgDp-4" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.601;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="120" relative="1" as="geometry">
+            <mxPoint x="218.99599999999998" y="382.9999999999999" as="sourcePoint" />
+            <mxPoint x="219" y="453" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BjNXo_p2kXInQrtyGgDp-5" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="120" relative="1" as="geometry">
+            <mxPoint x="143" y="176" as="sourcePoint" />
+            <mxPoint x="143" y="218" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BjNXo_p2kXInQrtyGgDp-6" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="120" relative="1" as="geometry">
+            <mxPoint x="141" y="84" as="sourcePoint" />
+            <mxPoint x="141" y="28" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BjNXo_p2kXInQrtyGgDp-7" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="120" relative="1" as="geometry">
+            <mxPoint x="103" y="28" as="sourcePoint" />
+            <mxPoint x="102" y="86.07" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BjNXo_p2kXInQrtyGgDp-8" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.425;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="cNEEXxES4iZ6Ibb-hSEK-2">
+          <mxGeometry width="120" relative="1" as="geometry">
+            <mxPoint x="112" y="-61" as="sourcePoint" />
+            <mxPoint x="106" y="-34" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BjNXo_p2kXInQrtyGgDp-9" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="cNEEXxES4iZ6Ibb-hSEK-3">
+          <mxGeometry width="120" relative="1" as="geometry">
+            <mxPoint x="177" y="-17" as="sourcePoint" />
+            <mxPoint x="342" y="43" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BjNXo_p2kXInQrtyGgDp-10" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=1;entryY=0.583;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="cNEEXxES4iZ6Ibb-hSEK-1">
+          <mxGeometry width="120" relative="1" as="geometry">
+            <mxPoint x="208" y="2" as="sourcePoint" />
+            <mxPoint x="198" y="27" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
